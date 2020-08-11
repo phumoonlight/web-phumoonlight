@@ -1,8 +1,16 @@
 .root {
   text-align: center;
-  margin: 50px;
+  margin: 25px;
+}
+
+.root > h1 {
+  font-weight: bold;
 }
 
 .root > h3 {
   color: #757575;
+}
+
+.social-link {
+  font-size: 25px;
 }
