@@ -1,0 +1,8 @@
+.root {
+  text-align: center;
+  margin: 50px;
+}
+
+.root > h3 {
+  color: #757575;
+}
