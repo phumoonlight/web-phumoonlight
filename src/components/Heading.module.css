@@ -1,6 +1,6 @@
 .root {
   text-align: center;
-  margin: 25px;
+  margin-top: 50px;
 }
 
 .root > h1 {
@@ -8,9 +8,10 @@
 }
 
 .root > h3 {
+  margin-top: -10px;
   color: #757575;
 }
 
-.social-link {
-  font-size: 25px;
+.profileimg {
+  width: 150px;
 }
