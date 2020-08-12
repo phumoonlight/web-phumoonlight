@@ -3,13 +3,17 @@ import { BackTop } from 'antd'
 import Heading from '../Heading'
 import About from '../About'
 import Work from '../Work'
+import Education from '../Education'
+import Skill from '../Skill'
 
 const IndexPageLayout = () => (
-  <div>
+  <div className="with-bg">
     <BackTop />
     <Heading />
     <About />
     <Work />
+    <Education />
+    <Skill />
   </div>
 )
 

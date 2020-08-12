@@ -1,11 +1,11 @@
 import React from 'react'
 import style from './About.module.css'
 
-const Highlight = () => (
+const About = () => (
   <div className={style.root}>
-    <h2>About</h2>
+    <h2>ABOUT 📝</h2>
     <div>New graduate. Self learner. Can improve. Never perfect.</div>
   </div>
 )
 
-export default Highlight
+export default About
