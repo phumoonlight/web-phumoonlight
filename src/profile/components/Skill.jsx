@@ -24,7 +24,7 @@ const Skill = () => (
   <div className={style.root}>
     <h2>SKILLS 👨🏻‍💻</h2>
     {skills.map((skill) => (
-      <div className={style.skill}>
+      <div key={skill.topic} className={style.skill}>
         <h3>{skill.topic}</h3>
         <div>{skill.content}</div>
       </div>

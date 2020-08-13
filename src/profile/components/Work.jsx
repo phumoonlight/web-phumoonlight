@@ -19,7 +19,7 @@ const Work = () => {
         {githubRepos.length && githubRepos
           .filter((repo) => repo.name.includes('web'))
           .map((repo) => (
-            <a href={repo.html_url} className={style.repobox}>
+            <a href={repo.html_url} className={style.repobox} key={repo.name}>
               <div>{repo.name}</div>
               <div>{repo.description}</div>
               <div className={style.lang}>{repo.language}</div>
