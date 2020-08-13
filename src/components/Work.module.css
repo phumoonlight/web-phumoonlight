@@ -10,22 +10,29 @@
   font-weight: bold;
 }
 
-.root > iframe {
-  border: solid #5f5f5f8f 2.5px;
-  border-radius: 25px;
-  height: 750px;
-  width: 750px;
+.workcontainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-@media only screen and (max-width: 775px) {
-  .root > iframe {
-    height: 1000px;
-    width: 100%;
-  }
+.repobox {
+  margin: 5px;
+  background-color: #505050;
+  display: inline-block;
+  padding: 10px;
+  transition: .15s;
+  color: white;
+  border-radius: 10px;
 }
 
-@media only screen and (max-width: 350px) {
-  .root > iframe {
-    height: 1100px;
-  }
+.repobox > div:first-child {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+.repobox:hover {
+  box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.5);
+  transform: scale(1.05);
 }
