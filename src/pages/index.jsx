@@ -1,14 +1,14 @@
 import React from 'react'
 import Head from 'next/head'
 import { HEAD } from '../config'
-import IndexLayout from '../layout/IndexLayout'
+import ProfileLayout from '../features/profile/ProfileLayout'
 
 const Index = () => (
   <>
     <Head>
       <title>{HEAD.title.index}</title>
     </Head>
-    <IndexLayout />
+    <ProfileLayout />
   </>
 )
 

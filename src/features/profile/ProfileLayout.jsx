@@ -6,9 +6,9 @@ import {
   Work,
   Education,
   Skill,
-} from '../profile/components'
+} from './components'
 
-const IndexLayout = () => (
+const ProfileLayout = () => (
   <div className="with-bg">
     <BackTop />
     <Heading />
@@ -19,4 +19,4 @@ const IndexLayout = () => (
   </div>
 )
 
-export default IndexLayout
+export default ProfileLayout

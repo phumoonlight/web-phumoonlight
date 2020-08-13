@@ -1,6 +1,6 @@
 import React from 'react'
 import Axios from 'axios'
-import { GITHUB_API_URL_REPOS } from '../../config'
+import { GITHUB_API_URL_REPOS } from '../../../config'
 import style from './Work.module.css'
 
 const Work = () => {
