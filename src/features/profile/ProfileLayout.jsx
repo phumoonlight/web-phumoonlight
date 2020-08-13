@@ -1,5 +1,4 @@
 import React from 'react'
-import { BackTop } from 'antd'
 import {
   Heading,
   About,
@@ -10,7 +9,6 @@ import {
 
 const ProfileLayout = () => (
   <div className="with-bg">
-    <BackTop />
     <Heading />
     <About />
     <Work />

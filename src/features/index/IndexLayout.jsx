@@ -1,10 +1,11 @@
 import React from 'react'
-import { BackTop } from 'antd'
+import { Heading, Menu, Network } from './components'
 
 const IndexLayout = () => (
-  <div className="with-bg">
-    <BackTop />
-    Index
+  <div>
+    <Heading />
+    <Menu />
+    <Network />
   </div>
 )
 

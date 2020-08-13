@@ -1,0 +1,10 @@
+.root {
+  font-size: 50px;
+  margin: 25px;
+  color: #414141;
+  transition: .15s;
+}
+
+.root:hover {
+  transform: scale(1.05);
+}

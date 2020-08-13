@@ -1,6 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 import PropTypes from 'prop-types'
+import { BackTop } from 'antd'
 import { HEAD } from '../config'
 import 'antd/dist/antd.css'
 import '../global.css'
@@ -20,6 +21,7 @@ const App = ({ Component, pageProps }) => (
       <meta property="og:description" content="" />
       <meta property="og:image" content="" /> */}
     </Head>
+    <BackTop />
     <Component {...pageProps} />
   </>
 )

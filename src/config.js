@@ -2,9 +2,9 @@ export const GITHUB_PROFILE_URL = 'https://phumoonlight.github.io/'
 export const GITHUB_API_URL_REPOS = 'https://api.github.com/users/phumoonlight/repos'
 export const HEAD = {
   title: {
-    index: 'Phumoonlight | Home',
-    profile: 'Phumoonlight | Profile',
-    playground: 'Phumoonlight | Playground',
+    index: 'Home | Phumoonlight',
+    profile: 'Profile | Phumoonlight',
+    playground: 'Playground | Phumoonlight',
   },
   meta: {
     description: 'phumoonlight profile',
