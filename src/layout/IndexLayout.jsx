@@ -1,10 +1,12 @@
 import React from 'react'
 import { BackTop } from 'antd'
-import Heading from '../Heading'
-import About from '../About'
-import Work from '../Work'
-import Education from '../Education'
-import Skill from '../Skill'
+import {
+  Heading,
+  About,
+  Work,
+  Education,
+  Skill,
+} from '../profile/components'
 
 const IndexLayout = () => (
   <div className="with-bg">

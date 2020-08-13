@@ -1,6 +1,6 @@
 import React from 'react'
-import IndexPageLayout from '../../components/layout/IndexPageLayout'
+import PlaygroundIndexLayout from '../../layout/PlaygroundIndexLayout'
 
-const IndexPage = () => <IndexPageLayout />
+const PlaygroundIndex = () => <PlaygroundIndexLayout />
 
-export default IndexPage
+export default PlaygroundIndex
