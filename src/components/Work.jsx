@@ -21,6 +21,7 @@ const Work = () => {
             <a href={repo.html_url} className={style.repobox}>
               <div>{repo.name}</div>
               <div>{repo.description}</div>
+              <div className={style.lang}>{repo.language}</div>
             </a>
           ))}
       </div>

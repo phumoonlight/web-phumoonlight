@@ -36,3 +36,9 @@
   box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.5);
   transform: scale(1.05);
 }
+
+.repobox > .lang {
+  text-align: right;
+  margin-top: 10px;
+  opacity: .5;
+}
