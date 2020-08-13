@@ -6,7 +6,7 @@ import Work from '../Work'
 import Education from '../Education'
 import Skill from '../Skill'
 
-const IndexPageLayout = () => (
+const IndexLayout = () => (
   <div className="with-bg">
     <BackTop />
     <Heading />
@@ -17,4 +17,4 @@ const IndexPageLayout = () => (
   </div>
 )
 
-export default IndexPageLayout
+export default IndexLayout
