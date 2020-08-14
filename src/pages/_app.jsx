@@ -15,11 +15,11 @@ const App = ({ Component, pageProps }) => (
       <meta name="keywords" content={HEAD.meta.keywords} />
       <meta name="author" content={HEAD.meta.author} />
       <meta name="google-site-verification" content={HEAD.meta.googleVerification} />
-      {/* <meta property="og:url" content="" />
-      <meta property="og:type" content="website" />
-      <meta property="og:title" content="" />
-      <meta property="og:description" content="" />
-      <meta property="og:image" content="" /> */}
+      <meta property="og:url" content={HEAD.meta.ogURL} />
+      <meta property="og:type" content={HEAD.meta.ogType} />
+      <meta property="og:title" content={HEAD.meta.ogTitle} />
+      <meta property="og:description" content={HEAD.meta.description} />
+      <meta property="og:image" content={HEAD.meta.ogImage} />
     </Head>
     <BackTop />
     <Component {...pageProps} />
