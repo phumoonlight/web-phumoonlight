@@ -1,6 +1,7 @@
 import React from 'react'
 import { Heading, Nav, Network } from '../../common/components'
-import { Menu } from './components'
+import Menu from './components/Menu'
+// import { Menu } from './components'
 
 const IndexLayout = () => (
   <div>
