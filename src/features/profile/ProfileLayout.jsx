@@ -1,6 +1,5 @@
 import React from 'react'
-import Nav from '../../common/Nav'
-import Heading from '../../common/Heading'
+import { Nav, Heading, Network } from '../../common/components'
 import { Detail } from './components'
 
 const ProfileLayout = () => (
@@ -10,6 +9,7 @@ const ProfileLayout = () => (
       <span>Poosarn Moolmuang</span>
     </Heading>
     <Detail />
+    <Network />
   </div>
 )
 

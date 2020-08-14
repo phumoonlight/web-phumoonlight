@@ -1,0 +1,18 @@
+.root {
+  display: flex;
+  justify-content: center;
+  background: #dadada75;
+}
+
+.root > a {
+  font-size: 50px;
+  margin-left: 25px;
+  margin-right: 25px;
+  color: #414141;
+  transition: .15s;
+}
+
+.root > a:hover {
+  color: #0066ff;
+  transform: scale(1.05);
+}
