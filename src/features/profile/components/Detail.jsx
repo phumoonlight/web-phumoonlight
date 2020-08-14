@@ -9,7 +9,7 @@ const skills = [
   },
   {
     topic: 'Framework & Libraries',
-    content: 'React, Next.js, Ant Design, jQuery, Mongoose, Jest',
+    content: 'React, Next.js, Ant Design, jQuery, Expressjs, Mongoose, Jest',
   },
   {
     topic: 'Tools',
