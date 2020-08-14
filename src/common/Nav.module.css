@@ -1,0 +1,31 @@
+.root {
+  padding: 15px;
+  background: #2C3335;
+  opacity: .85;
+  position: fixed;
+  width: 100%;
+}
+
+.home {
+  cursor: pointer;
+  font-family: monospace;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  font-size: 20px;
+  padding-left: 15px;
+  border-radius: 25px;
+  transition: .15s;
+}
+
+.home:hover {
+  color: #bebebe;
+}
+
+.label {
+  font-family: monospace;
+  color: #ffffff;
+  padding-left: 10px;
+  font-size: 20px;
+}

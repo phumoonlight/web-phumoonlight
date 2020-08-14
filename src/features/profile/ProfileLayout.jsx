@@ -1,19 +1,15 @@
 import React from 'react'
+import Nav from '../../common/Nav'
 import {
   Heading,
-  About,
-  Work,
-  Education,
-  Skill,
+  Detail,
 } from './components'
 
 const ProfileLayout = () => (
-  <div className="with-bg">
+  <div>
+    <Nav label="Profile" />
     <Heading />
-    <About />
-    <Work />
-    <Education />
-    <Skill />
+    <Detail />
   </div>
 )
 

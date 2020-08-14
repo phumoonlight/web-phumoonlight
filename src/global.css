@@ -11,7 +11,7 @@ body {
   height: 100%;  
   opacity: .25; 
   z-index: -1;
-  background: url('/polygonal.png');
+  background: url('/profile-head.png');
   background-size: cover;
   background-position: 0 150%;
 }
