@@ -1,6 +1,7 @@
 .root {
   font-size: 50px;
-  margin: 25px;
+  margin-left: 25px;
+  margin-right: 25px;
   color: #414141;
   transition: .15s;
 }

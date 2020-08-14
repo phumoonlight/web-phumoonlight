@@ -24,6 +24,7 @@ const skills = [
 const Detail = () => (
   <div className={style.root}>
     <div className={style.container}>
+      <img src="/profile2.jpg" alt="profile" />
       <h2>ABOUT 📝</h2>
       <div>New graduate. Self learner. Can improve. Never perfect.</div>
       <Divider />
@@ -41,6 +42,7 @@ const Detail = () => (
           <div>{skill.content}</div>
         </div>
       ))}
+      <Divider />
     </div>
   </div>
 )
