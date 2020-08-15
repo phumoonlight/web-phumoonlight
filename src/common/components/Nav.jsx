@@ -8,12 +8,15 @@ const Nav = ({ label }) => (
     <Link href="/">
       <span className={style.home}>Phumoonlight</span>
     </Link>
-    <span className={style.label}>{`| ${label}`}</span>
+    <span className={style.label}>
+      {'| '}
+      {label}
+    </span>
   </div>
 )
 
 Nav.propTypes = {
-  label: PropTypes.string.isRequired,
+  label: PropTypes.node.isRequired,
 }
 
 export default Nav
