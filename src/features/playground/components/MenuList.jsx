@@ -10,6 +10,12 @@ const MenuList = () => (
       bannerSrc="/images/playground-banner-lightswitch.jpg"
       title="LIGHT SWITCH"
     />
+    {/* <MenuCardLink
+      href="/playground/compressimg"
+      className={style.menu}
+      bannerSrc="/images/playground-banner-compressimg.jpg"
+      title="COMPRESS IMG"
+    /> */}
   </div>
 )
 
