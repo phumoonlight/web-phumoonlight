@@ -6,6 +6,8 @@ export const HEAD = {
     index: 'Home | Phumoonlight',
     profile: 'Profile | Phumoonlight',
     playground: 'Playground | Phumoonlight',
+    playgroundLightSwitch: 'LightSwitch | Phumoonlight',
+    playgroundCompressImg: 'CompressImg | Phumoonlight',
   },
   meta: {
     description: 'phumoonlight profile',
