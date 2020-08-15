@@ -4,7 +4,7 @@ import MenuList from './components/MenuList'
 
 const IndexLayout = () => (
   <div>
-    <Nav label="Home" />
+    <Nav />
     <Heading key="h-test" backgroundURL="/images/index-main-banner.jpg">Phumoonlight</Heading>
     <MenuList />
     <Network />

@@ -1,22 +1,46 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Link from 'next/link'
-import style from './Nav.module.css'
+import { Breadcrumb } from 'antd'
+import styled from 'styled-components'
+import StyledLink from './StyledLink'
 
-const Nav = ({ label }) => (
-  <div className={style.root}>
-    <Link href="/">
-      <span className={style.home}>Phumoonlight</span>
-    </Link>
-    <span className={style.label}>
-      {'| '}
-      {label}
-    </span>
-  </div>
+const Nav = ({ className, children }) => (
+  <Breadcrumb className={className}>
+    <Breadcrumb.Item>
+      <Link href="/">
+        <StyledLink main>Phumoonlight</StyledLink>
+      </Link>
+    </Breadcrumb.Item>
+    {children}
+  </Breadcrumb>
 )
 
 Nav.propTypes = {
-  label: PropTypes.node.isRequired,
+  className: PropTypes.string.isRequired,
+  children: PropTypes.node,
 }
 
-export default Nav
+Nav.defaultProps = {
+  children: '',
+}
+
+export default styled(Nav)`
+  padding: 15px;
+  background: #2C3335;
+  opacity: .85;
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+  color: white;
+  span {
+    color: white;
+    font-size: 20px;
+  }
+  a {
+    color: white;
+  }
+  &.ant-breadcrumb > span:last-child a {
+    color: #ffffff;
+  }
+`
