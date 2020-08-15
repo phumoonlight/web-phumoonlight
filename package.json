@@ -10,14 +10,18 @@
     "build": "next build",
     "start": "next start"
   },
+  "resolutions": {
+    "styled-components": "^5"
+  },
   "dependencies": {
-    "@ant-design/icons": "^4.2.2",
+    "@ant-design/icons": "4.2.2",
     "antd": "4.5.3",
-    "axios": "^0.19.2",
+    "axios": "0.19.2",
     "next": "9.5.2",
-    "prop-types": "^15.7.2",
+    "prop-types": "15.7.2",
     "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "react-dom": "16.13.1",
+    "styled-components": "5.1.1"
   },
   "devDependencies": {
     "eslint": "7.6.0",
