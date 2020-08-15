@@ -7,7 +7,7 @@ const MenuList = () => (
     <MenuCardLink
       href="/profile"
       className={style.menu}
-      bannerSrc="/images/profile-main-banner.png"
+      bannerSrc="/images/profile-main-banner.jpg"
       title="PROFILE"
     >
       View my profile.
