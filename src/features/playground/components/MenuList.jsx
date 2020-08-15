@@ -7,11 +7,9 @@ const MenuList = () => (
     <MenuCardLink
       href="/playground/lightswitch"
       className={style.menu}
-      bannerSrc="/profile-head.png"
+      bannerSrc="/images/playground-banner-lightswitch.jpg"
       title="LIGHT SWITCH"
-    >
-      ...
-    </MenuCardLink>
+    />
   </div>
 )
 

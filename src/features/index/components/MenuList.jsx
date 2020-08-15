@@ -7,7 +7,7 @@ const MenuList = () => (
     <MenuCardLink
       href="/profile"
       className={style.menu}
-      bannerSrc="/profile-head.png"
+      bannerSrc="/images/profile-main-banner.png"
       title="PROFILE"
     >
       View my profile.
@@ -15,7 +15,7 @@ const MenuList = () => (
     <MenuCardLink
       href="/playground"
       className={style.menu}
-      bannerSrc="/playground-head.jpg"
+      bannerSrc="/images/playground-main-banner.jpg"
       title="PLAYGROUND"
     >
       View my creations.
@@ -23,7 +23,7 @@ const MenuList = () => (
     <MenuCardLink
       href="/resume.pdf"
       className={style.menu}
-      bannerSrc="/resume-head.jpg"
+      bannerSrc="/images/resume-main-banner.jpg"
       title="RESUME"
     >
       View my resume.

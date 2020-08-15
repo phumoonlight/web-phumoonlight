@@ -5,7 +5,7 @@ import style from './Detail.module.css'
 const Detail = () => (
   <div className={style.root}>
     <div className={style.container}>
-      <img src="/profile2.jpg" alt="profile" />
+      <img src="/images/profile-pic.jpg" alt="profile" />
       <div className={style.detail}>
         <h2>ABOUT 📝</h2>
         <div>New graduate. Self learner. Can improve. Never perfect.</div>

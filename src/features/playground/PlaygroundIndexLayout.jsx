@@ -5,7 +5,7 @@ import MenuList from './components/MenuList'
 const IndexLayout = () => (
   <div>
     <Nav label="Playground" />
-    <Heading key="h-test" backgroundURL="/playground-head.jpg">Playground (Coming Soon!)</Heading>
+    <Heading backgroundURL="/images/playground-main-banner.jpg">Playground</Heading>
     <MenuList />
     <Network />
   </div>
