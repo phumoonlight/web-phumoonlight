@@ -1,13 +1,12 @@
 import React from 'react'
 import { Heading, Nav, Network } from '../../common/components'
-import Menu from './components/Menu'
-// import { Menu } from './components'
+import MenuList from './components/MenuList'
 
 const IndexLayout = () => (
   <div>
     <Nav label="Home" />
     <Heading key="h-test" backgroundURL="/forest.jpg">Phumoonlight</Heading>
-    <Menu />
+    <MenuList />
     <Network />
   </div>
 )
