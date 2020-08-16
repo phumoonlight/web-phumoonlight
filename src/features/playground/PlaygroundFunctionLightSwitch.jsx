@@ -6,11 +6,17 @@ import { PlaygroundHeading } from './components'
 
 const PlaygroundFunctionLightSwitch = ({ className }) => {
   const [islightOn, setIsLightOn] = React.useState(true)
-  const toggleLight = () => setIsLightOn((prev) => !prev)
+  const toggleLight = () => setIsLightOn((prevState) => !prevState)
+  const toggle = {
+    background: islightOn ? 'white' : '#333945',
+    textColor: islightOn ? 'black' : 'white',
+    statusAsText: islightOn ? ' ON' : ' OFF',
+  }
   return (
-    <div className={className} style={{ background: islightOn ? 'white' : '#333945' }}>
-      <PlaygroundHeading color={islightOn ? 'black' : 'white'}>
-        LIGHT SWITCH
+    <div className={className} style={{ background: toggle.background }}>
+      <PlaygroundHeading color={toggle.textColor}>
+        LIGHT SWITCH :
+        {toggle.statusAsText}
       </PlaygroundHeading>
       <Switch defaultChecked onChange={toggleLight} />
     </div>
@@ -24,7 +30,7 @@ PlaygroundFunctionLightSwitch.propTypes = {
 export default styled(PlaygroundFunctionLightSwitch)`
   text-align: center;
   padding-top: 250px;
-  padding-bottom: 400px;
+  padding-bottom: 300px;
   button {
     transform: scale(2.5);
   }
