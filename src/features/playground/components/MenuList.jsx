@@ -1,22 +1,37 @@
 import React from 'react'
+import PropTypes from 'prop-types'
+import styled from 'styled-components'
 import { MenuCardLink } from '../../../common/components'
-import style from './MenuList.module.css'
 
-const MenuList = () => (
-  <div className={style.root}>
+const MenuList = ({ className }) => (
+  <div className={className}>
     <MenuCardLink
+      className="menu-card-link"
       href="/playground/lightswitch"
-      className={style.menu}
       bannerSrc="/images/playground-banner-lightswitch.jpg"
       title="LIGHT SWITCH"
     />
-    {/* <MenuCardLink
+    <MenuCardLink
+      className="menu-card-link"
       href="/playground/compressimg"
-      className={style.menu}
       bannerSrc="/images/playground-banner-compressimg.jpg"
       title="COMPRESS IMG"
-    /> */}
+    />
   </div>
 )
 
-export default MenuList
+MenuList.propTypes = {
+  className: PropTypes.string.isRequired,
+}
+
+export default styled(MenuList)`
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  .menu-card-link {
+    transform: translateY(-100px);
+  }
+  .menu-card-link:hover {
+    transform: translateY(-100px) scale(1.05);
+  }
+`
