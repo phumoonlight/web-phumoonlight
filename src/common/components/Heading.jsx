@@ -1,21 +1,21 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import style from './Heading.module.css'
+import styled from 'styled-components'
 
-const Heading = ({ children, backgroundURL }) => {
+const Heading = ({ className, children, backgroundURL }) => {
   const [positionX, setPositionX] = React.useState(0)
   const [positionY, setPositionY] = React.useState(0)
-  const handleHover = (e) => {
+  const setMousePosition = (e) => {
     setPositionX(e.clientX)
     setPositionY(e.clientY)
   }
   return (
     <div
-      className={style.root}
-      onMouseMove={handleHover}
+      className={className}
+      onMouseMove={setMousePosition}
       style={{
         background: `url(${backgroundURL})`,
-        backgroundPosition: `${positionX / 50}% ${positionY / 50}%`,
+        backgroundPosition: `${positionX / 200}% ${positionY / 100}%`,
       }}
     >
       {children}
@@ -24,8 +24,19 @@ const Heading = ({ children, backgroundURL }) => {
 }
 
 Heading.propTypes = {
-  children: PropTypes.oneOfType([PropTypes.element, PropTypes.string]).isRequired,
+  className: PropTypes.string.isRequired,
+  children: PropTypes.node.isRequired,
   backgroundURL: PropTypes.string.isRequired,
 }
 
-export default Heading
+export default styled(Heading)`
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 40px;
+  padding-top: 175px;
+  padding-bottom: 175px;
+  text-shadow: 2px 2px rgba(0,0,0,1);
+`
