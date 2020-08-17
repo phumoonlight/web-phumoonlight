@@ -1,7 +1,7 @@
 import React from 'react'
 import { Breadcrumb } from 'antd'
 import { Nav, Heading, Network } from '../../common/components'
-import Detail from './components/Detail'
+import ProfileContainer from './ProfileContainer'
 
 const ProfileLayout = () => (
   <div>
@@ -11,7 +11,7 @@ const ProfileLayout = () => (
     <Heading backgroundURL="/images/profile-main-banner.jpg">
       <span>Poosarn Moolmuang</span>
     </Heading>
-    <Detail />
+    <ProfileContainer />
     <Network />
   </div>
 )
