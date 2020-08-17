@@ -5,10 +5,10 @@ import Link from 'next/link'
 import { Breadcrumb } from 'antd'
 import { Nav, Network, StyledLink } from '../../common/components'
 import PlaygroundFunctionContext from './PlaygroundFunctionContext'
-import PlaygroundFunctionLightSwitch from './PlaygroundFunctionLightSwitch'
+import PlaygroundCreationLightSwitch from './PlaygroundCreationLightSwitch'
 
 const getplayGroundFunction = {
-  LightSwitch: <PlaygroundFunctionLightSwitch />,
+  LightSwitch: <PlaygroundCreationLightSwitch />,
 }
 
 const PlaygroundFunctionLayout = () => {
