@@ -1,11 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import ProfileBlock from './ProfileBlock'
+import ProfileCard from './ProfileCard'
 
 const ProfileContainer = ({ className }) => (
   <div className={className}>
-    <ProfileBlock />
+    <ProfileCard />
   </div>
 )
 
@@ -15,7 +15,9 @@ ProfileContainer.propTypes = {
 
 export default styled(ProfileContainer)`
   display: flex;
+  align-items: flex-start;
   text-align: center;
   justify-content: center;
+  min-height: 100%;
   margin-bottom: 50px;
 `

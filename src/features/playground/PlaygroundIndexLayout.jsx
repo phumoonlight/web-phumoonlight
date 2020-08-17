@@ -1,17 +1,19 @@
 import React from 'react'
 import { Breadcrumb } from 'antd'
-import { Nav, Heading, Network } from '../../common/components'
+import {
+  Nav, Header, PageContainer, Footer,
+} from '../../common/components'
 import MenuList from './components/MenuList'
 
 const PlaygroundLayout = () => (
-  <div>
+  <PageContainer>
     <Nav>
       <Breadcrumb.Item>Playground</Breadcrumb.Item>
     </Nav>
-    <Heading backgroundURL="/images/playground-main-banner.jpg">Playground</Heading>
+    <Header title="Playground" backgroundURL="/images/playground-main-banner.jpg" />
     <MenuList />
-    <Network />
-  </div>
+    <Footer />
+  </PageContainer>
 )
 
 export default PlaygroundLayout

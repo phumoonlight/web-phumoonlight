@@ -28,6 +28,7 @@ export default styled(MenuList)`
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  align-items: flex-start;
   .menu-card-link {
     transform: translateY(-100px);
   }

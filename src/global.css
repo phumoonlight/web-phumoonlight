@@ -2,16 +2,7 @@ body {
   font-family: sans-serif;
 }
 
-.with-bg::before {
-  content: "";
-  position: absolute;
-  top: 0; 
-  left: 0;
-  width: 100%; 
-  height: 100%;  
-  opacity: .25; 
-  z-index: -1;
-  background: url('/profile-head.png');
-  background-size: cover;
-  background-position: 0 150%;
+#__next,
+main {
+  height: inherit;
 }

@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { Switch } from 'antd'
-import { PlaygroundHeading } from './components'
+import { PlaygroundHeader } from './components'
 
 const PlaygroundFunctionLightSwitch = ({ className }) => {
   const [islightOn, setIsLightOn] = React.useState(true)
@@ -14,10 +14,10 @@ const PlaygroundFunctionLightSwitch = ({ className }) => {
   }
   return (
     <div className={className} style={{ background: toggle.background }}>
-      <PlaygroundHeading color={toggle.textColor}>
-        LIGHT SWITCH :
-        {toggle.statusAsText}
-      </PlaygroundHeading>
+      <PlaygroundHeader
+        title={`LIGHT SWITCH : ${toggle.statusAsText}`}
+        color={toggle.textColor}
+      />
       <Switch defaultChecked onChange={toggleLight} />
     </div>
   )
@@ -29,8 +29,10 @@ PlaygroundFunctionLightSwitch.propTypes = {
 
 export default styled(PlaygroundFunctionLightSwitch)`
   text-align: center;
+  border: solid black 1px;
   padding-top: 250px;
-  padding-bottom: 300px;
+  padding-bottom: 250px;
+  margin-bottom: 25px;
   button {
     transform: scale(2.5);
   }

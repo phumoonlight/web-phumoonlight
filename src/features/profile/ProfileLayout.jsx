@@ -1,19 +1,22 @@
 import React from 'react'
 import { Breadcrumb } from 'antd'
-import { Nav, Heading, Network } from '../../common/components'
+import {
+  Nav, Header, PageContainer, Footer,
+} from '../../common/components'
 import ProfileContainer from './ProfileContainer'
 
 const ProfileLayout = () => (
-  <div>
+  <PageContainer>
     <Nav>
       <Breadcrumb.Item>Profile</Breadcrumb.Item>
     </Nav>
-    <Heading backgroundURL="/images/profile-main-banner.jpg">
-      <span>Poosarn Moolmuang</span>
-    </Heading>
+    <Header
+      title="Poosarn Moolmuang"
+      backgroundURL="/images/profile-main-banner.jpg"
+    />
     <ProfileContainer />
-    <Network />
-  </div>
+    <Footer />
+  </PageContainer>
 )
 
 export default ProfileLayout

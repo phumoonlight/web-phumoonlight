@@ -5,7 +5,7 @@ import { Divider } from 'antd'
 import ProfileImage from './ProfileImage'
 import ProfileContent from './ProfileContent'
 
-const ProfileBlock = ({ className }) => (
+const ProfileCard = ({ className }) => (
   <div className={className}>
     <ProfileImage />
     <ProfileContent title="ABOUT 📝">
@@ -44,19 +44,19 @@ const ProfileBlock = ({ className }) => (
   </div>
 )
 
-ProfileBlock.propTypes = {
+ProfileCard.propTypes = {
   className: PropTypes.string.isRequired,
 }
 
-export default styled(ProfileBlock)`
-  background: #4C4B4B;
+export default styled(ProfileCard)`
   display: inline-block;
+  background: #4C4B4B;
+  color: #ffffff;
   width: 550px;
   margin: 10px;
   border-radius: 20px;
   border-bottom: solid #2b2b2b 2.5px;
   box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.25);
-  color: #ffffff;
   transform: translateY(-150px);
   h3 {
     font-weight: bold;

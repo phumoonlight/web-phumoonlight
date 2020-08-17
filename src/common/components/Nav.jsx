@@ -34,7 +34,7 @@ export default styled(Nav)`
   z-index: 5;
   color: white;
   span {
-    color: white;
+    color: #A4B0BD;
     font-size: 20px;
   }
   a {

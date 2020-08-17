@@ -1,2 +1,2 @@
 export { default as MenuList } from './MenuList'
-export { default as PlaygroundHeading } from './PlaygroundHeading'
+export { default as PlaygroundHeader } from './PlaygroundHeader'
