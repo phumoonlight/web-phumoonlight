@@ -1,17 +1,17 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import { MenuCardLink } from '../../../common/components'
+import { LinkMenuCard } from '../../../common/components'
 
 const MenuList = ({ className }) => (
   <div className={className}>
-    <MenuCardLink
+    <LinkMenuCard
       className="menu-card-link"
       href="/playground/lightswitch"
       bannerSrc="/images/playground-banner-lightswitch.jpg"
       title="LIGHT SWITCH"
     />
-    <MenuCardLink
+    <LinkMenuCard
       className="menu-card-link"
       href="/playground/compressimg"
       bannerSrc="/images/playground-banner-compressimg.jpg"

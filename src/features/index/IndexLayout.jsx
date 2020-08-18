@@ -1,14 +1,16 @@
 import React from 'react'
-import { Header, Nav, Footer } from '../../common/components'
-import MenuList from './components/MenuList'
+import {
+  Header, Nav, Footer, PageContainer,
+} from '../../common/components'
+import MenuList from './IndexMenuList'
 
 const IndexLayout = () => (
-  <div>
+  <PageContainer>
     <Nav />
     <Header title="Phumoonlight" backgroundURL="/images/index-main-banner.jpg" />
     <MenuList />
     <Footer />
-  </div>
+  </PageContainer>
 )
 
 export default IndexLayout

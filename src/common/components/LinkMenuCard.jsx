@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import Link from 'next/link'
 import styled from 'styled-components'
 
-const MenuCardLink = ({
+const LinkMenuCard = ({
   className, href, bannerSrc, title, children,
 }) => (
   <Link href={href}>
@@ -15,7 +15,7 @@ const MenuCardLink = ({
   </Link>
 )
 
-MenuCardLink.propTypes = {
+LinkMenuCard.propTypes = {
   href: PropTypes.string.isRequired,
   bannerSrc: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
@@ -23,12 +23,12 @@ MenuCardLink.propTypes = {
   children: PropTypes.node,
 }
 
-MenuCardLink.defaultProps = {
+LinkMenuCard.defaultProps = {
   className: '',
   children: '',
 }
 
-export default styled(MenuCardLink)`
+export default styled(LinkMenuCard)`
   cursor: pointer;
   text-align: center;
   font-weight: bold;

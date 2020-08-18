@@ -1,10 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const PageLayout = ({ children }) => <main>{children}</main>
+const PageContainer = ({ children }) => <main>{children}</main>
 
-PageLayout.propTypes = {
+PageContainer.propTypes = {
   children: PropTypes.node.isRequired,
 }
 
-export default PageLayout
+export default PageContainer

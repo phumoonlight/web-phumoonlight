@@ -6,14 +6,16 @@ import styled from 'styled-components'
 import StyledLink from './StyledLink'
 
 const Nav = ({ className, children }) => (
-  <Breadcrumb className={className}>
-    <Breadcrumb.Item>
-      <Link href="/">
-        <StyledLink main>Phumoonlight</StyledLink>
-      </Link>
-    </Breadcrumb.Item>
-    {children}
-  </Breadcrumb>
+  <nav>
+    <Breadcrumb className={className}>
+      <Breadcrumb.Item>
+        <Link href="/">
+          <StyledLink main>Phumoonlight</StyledLink>
+        </Link>
+      </Breadcrumb.Item>
+      {children}
+    </Breadcrumb>
+  </nav>
 )
 
 Nav.propTypes = {
