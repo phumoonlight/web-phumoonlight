@@ -1,5 +1,5 @@
 import React from 'react'
 
-const PlaygroundFunctionContext = React.createContext({})
+const PlaygroundCreationContext = React.createContext({})
 
-export default PlaygroundFunctionContext
+export default PlaygroundCreationContext
