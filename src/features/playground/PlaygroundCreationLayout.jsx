@@ -1,7 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Link from 'next/link'
-// import styled from 'styled-components'
 import { Breadcrumb } from 'antd'
 import {
   Nav, StyledLink, PageContainer, Footer,
