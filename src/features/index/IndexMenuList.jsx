@@ -13,14 +13,14 @@ const IndexMenuList = ({ className }) => (
     >
       View my profile.
     </LinkMenuCard>
-    <LinkMenuCard
+    {/* <LinkMenuCard
       href="/playground"
       className="menu"
       bannerSrc="/images/playground-main-banner.jpg"
       title="PLAYGROUND"
     >
       View my creations.
-    </LinkMenuCard>
+    </LinkMenuCard> */}
     <LinkMenuCard
       href="/resume.pdf"
       className="menu"
