@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import LinkMenuCard from '../components/LinkMenuCard'
+import LinkMenuCard from './MenuCard'
 
 const StyledContainer = styled.div`
   display: flex;

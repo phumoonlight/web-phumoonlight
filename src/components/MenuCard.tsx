@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import styled from 'styled-components'
 
-const CardContainer = styled.div`
+const CardContainer = styled.a`
   cursor: pointer;
   text-align: center;
   font-weight: bold;
@@ -15,6 +15,7 @@ const CardContainer = styled.div`
   transition: .15s;
   :hover {
     box-shadow: 0px 0px 25px 0px rgba(0, 140, 255, 0.85);
+    color: #ffffff;
   }
   .banner {
     object-fit: cover;
@@ -41,20 +42,24 @@ interface LinkMenuCardProps {
   className?: string,
 }
 
-const LinkMenuCard: React.FC<LinkMenuCardProps> = ({
+export const MenuCard: React.FC<LinkMenuCardProps> = ({
   className,
   href,
   bannerSrc,
   title,
   children,
 }) => (
-  <Link href={href}>
+  <Link href={href} passHref>
     <CardContainer className={className}>
       <img className="banner" src={bannerSrc} alt={title} />
-      <div className="title">{title}</div>
-      <div className="description">{children}</div>
+      <div className="title">
+        {title}
+      </div>
+      <div className="description">
+        {children}
+      </div>
     </CardContainer>
   </Link>
 )
 
-export default LinkMenuCard
+export default MenuCard

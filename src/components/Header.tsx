@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import Nav from './Nav'
 
 interface StyledHeaderProps {
   backgroundURL?: string
@@ -13,9 +14,12 @@ const StyledHeader = styled.header<StyledHeaderProps>`
   font-weight: bold;
   color: #ffffff;
   font-size: 40px;
-  padding-top: 175px;
-  padding-bottom: 175px;
+  padding-bottom: 200px;
   text-shadow: 2px 2px rgba(0,0,0,1);
+  .title {
+    margin-top: 100px;
+    letter-spacing: 2.5px;
+  }
 `
 
 interface HeaderProps {
@@ -26,7 +30,8 @@ interface HeaderProps {
 
 const Header: React.FC<HeaderProps> = ({ className, title, backgroundURL }) => (
   <StyledHeader backgroundURL={backgroundURL} className={className}>
-    {title}
+    <Nav />
+    <div className="title">{title}</div>
   </StyledHeader>
 )
 

@@ -1,8 +1,8 @@
 import React from 'react'
 import Head from 'next/head'
 import { HEAD } from '../../config'
-import PlaygroundCreationLayout from '../../feature-playground/PlaygroundCreationLayout'
-import PlaygroundCreationLightSwitch from '../../feature-playground/PlaygroundCreationLightSwitch'
+import PlaygroundCreationLayout from '../../layouts/PlaygroundDemoLayout'
+import PlaygroundCreationLightSwitch from '../../layouts/PlaygroundLightswitchLayout'
 
 const PlaygroundLightSwitch: React.FC = () => (
   <>

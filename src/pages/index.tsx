@@ -1,15 +1,16 @@
 import React from 'react'
 import Head from 'next/head'
+import { PageRoot } from '../components/PageRoot'
+import { IndexLayout } from '../layouts/IndexLayout'
 import { HEAD } from '../config'
-import IndexLayout from '../feature-index/IndexLayout'
 
 const IndexPage: React.FC = () => (
-  <>
+  <PageRoot>
     <Head>
       <title>{HEAD.title.index}</title>
     </Head>
     <IndexLayout />
-  </>
+  </PageRoot>
 )
 
 export default IndexPage

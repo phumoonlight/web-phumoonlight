@@ -1,4 +1,5 @@
 export const DEPLOYMENT_HOST = 'https://phumoonlight.vercel.app/'
+
 export const HEAD = {
   title: {
     index: 'Home | Phumoonlight',
@@ -19,9 +20,12 @@ export const HEAD = {
     ogImage: `${DEPLOYMENT_HOST}profile.png`,
   },
 }
+
 export const PROFILE_URL = {
   linkedin: 'https://www.linkedin.com/in/poosarn-moolmuang/',
-  github: 'https://phumoonlight.github.io/',
-  facebook: 'https://www.facebook.com/ppmeemee',
+  github: 'https://github.com/phumoonlight/',
+  facebook: 'https://www.facebook.com/ppmeemee/',
+  twitter: 'https://twitter.com/phumoonlight/',
 }
+
 // export const GITHUB_API_URL_REPOS = 'https://api.github.com/users/phumoonlight/repos'

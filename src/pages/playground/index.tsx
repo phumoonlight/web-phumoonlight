@@ -1,7 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 import { HEAD } from '../../config'
-import PlaygroundIndexLayout from '../../feature-playground/PlaygroundIndexLayout'
+import PlaygroundIndexLayout from '../../layouts/PlaygroundIndexLayout'
 
 const PlaygroundIndex = () => (
   <>

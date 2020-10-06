@@ -2,7 +2,6 @@ import React from 'react'
 import Head from 'next/head'
 import { AppProps } from 'next/app'
 import { HEAD } from '../config'
-import 'antd/dist/antd.css'
 import '../global.css'
 
 const App: React.FC<AppProps> = ({ Component, pageProps }) => (

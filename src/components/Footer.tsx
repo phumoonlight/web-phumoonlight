@@ -1,9 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Tooltip } from 'antd'
 import { LinkedinFilled, FacebookFilled, GithubFilled } from '@ant-design/icons'
+import { ExternalLink } from './ExternalLink'
 import { PROFILE_URL } from '../config'
-import LinkNewTab from '../components/LinkNewTab'
 
 const FooterContainer = styled.footer`
   display: flex;
@@ -39,21 +38,15 @@ interface FooterProps {
 const Footer: React.FC<FooterProps> = ({ className }) => (
   <FooterContainer className={className}>
     <div className="flex-container">
-      <LinkNewTab className="link" href={PROFILE_URL.linkedin}>
-        <Tooltip title="Visit my LinkedIn">
-          <LinkedinFilled />
-        </Tooltip>
-      </LinkNewTab>
-      <LinkNewTab className="link" href={PROFILE_URL.facebook}>
-        <Tooltip title="Visit my Facebook">
-          <FacebookFilled />
-        </Tooltip>
-      </LinkNewTab>
-      <LinkNewTab className="link" href={PROFILE_URL.github}>
-        <Tooltip title="Visit my GitHub">
-          <GithubFilled />
-        </Tooltip>
-      </LinkNewTab>
+      <ExternalLink className="link" href={PROFILE_URL.linkedin}>
+        <LinkedinFilled />
+      </ExternalLink>
+      <ExternalLink className="link" href={PROFILE_URL.facebook}>
+        <FacebookFilled />
+      </ExternalLink>
+      <ExternalLink className="link" href={PROFILE_URL.github}>
+        <GithubFilled />
+      </ExternalLink>
     </div>
   </FooterContainer>
 )

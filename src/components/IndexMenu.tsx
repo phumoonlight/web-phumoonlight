@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import LinkMenuCard from '../components/LinkMenuCard'
+import LinkMenuCard from './MenuCard'
 
 const StyledMenuList = styled.div`
   display: flex;
@@ -18,7 +18,7 @@ interface IndexMenuListProps {
   className?: string
 }
 
-const IndexMenuList: React.FC<IndexMenuListProps> = ({ className }) => (
+export const IndexMenu: React.FC<IndexMenuListProps> = ({ className }) => (
   <StyledMenuList className={className}>
     <LinkMenuCard
       href="/profile"
@@ -47,4 +47,4 @@ const IndexMenuList: React.FC<IndexMenuListProps> = ({ className }) => (
   </StyledMenuList>
 )
 
-export default IndexMenuList
+export default IndexMenu
